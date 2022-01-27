@@ -1,0 +1,149 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-image: url("/images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background-image: url("/images/pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+    }
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card {
+    max-width: 350px;
+    height: auto;
+    margin: 1rem auto;
+    box-shadow: 0 0.5rem 1rem #0004;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-content {
+    text-align: center;
+}
+
+.card-title {
+    color: #2c2858;
+}
+
+.card-text {
+    color: #b1b1c1;
+}
+
+.card-plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+    padding: 1rem 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #f8f8fe;
+}
+
+.card-plan > img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.card-plan > a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.card-plan > a:hover {
+    text-decoration: none;
+}
+
+.plan-value {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+.plan-value > * {
+    margin: 0.2rem;
+    text-align: start;
+}
+
+.plan-value > h4 {
+    color: #43485c;
+}
+
+.plan-value > p {
+    color: #9897ac;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 2rem;
+}
+
+.card-footer > button {
+    padding: 0.7rem;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #5e00e4;
+    color: #fff;
+}
+
+.card-footer > button:hover {
+    opacity: 0.75;
+}
+
+.card-footer > a {
+    margin: 0.5rem;
+    padding: 0.7rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: #858ca6;
+}
+
+.card-footer > a:hover {
+    color: #252f46;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
